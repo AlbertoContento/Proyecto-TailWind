@@ -1,4 +1,4 @@
-# ⏰ 🌐 Proyecto Vite con Tailwind CSS v3, PostCSS y Autoprefixer
+# 🌐 Proyecto Vite con Tailwind CSS v3, PostCSS y Autoprefixer
 
 Este proyecto es una plantilla básica que integra Vite con Tailwind CSS versión 3, utilizando PostCSS y Autoprefixer para el procesamiento de estilos.
 
@@ -55,4 +55,4 @@ Este proyecto está bajo la licencia MIT.
 🎨 Capturas de Pantalla
 Aquí tienes una vista previa de cómo luce el proyecto:
 
-![Pantalla Principal](https://github.com/AlbertoContento/PROYECTOS-PYTHON/blob/main/PROYECTO08%20-%20Reloj%20Despertador/assets/Captura_de_pantalla.png)
+![Pantalla Principal](https://github.com/AlbertoContento/Proyecto-TailWind/blob/main/assets/Captura%20de%20pantalla.png)
