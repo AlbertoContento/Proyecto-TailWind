@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>TailWind</title>
+  </head>
+  <body>
+    <header class="flex items-center justify-between p-4 bg-gray-100 shadow-md">
+        <h1 class="font-bold">My Portfolio</h1>
+        <nav class="hidden md:flex md:gap-4" id="main-nav">
+          <a href="#" class="hover:text-blue-500">About</a>
+          <a href="#" class="hover:text-blue-500">Home</a>
+          <a href="#" class="hover:text-blue-500">Contact</a>
+        </nav>
+        <button class="block md:hidden" id="mobile-nav-btn">
+          <span class="block w-6 h-[2px] bg-black mb-1"></span>
+          <span class="block w-6 h-[2px] bg-black mb-1"></span>
+          <span class="block w-6 h-[2px] bg-black mb-1"></span>
+        </button>
+      </header>
+      <!-- Hero Section -->
+      <section class="flex flex-col md:flex-row items-center justify-around bg-gradient-to-r from-primary to-secondary text-foreground p-8 gap-4">
+        <div class="text-center md:text-left">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to my Portfolio</h1>
+        <p class="text-xl md:text-2xl mb-6">Hi, I`m a web developer, discover my skills and services</p>
+          <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <a class="px-6 py-4 bg-primary text-primary-foreground rounded-md shadow-md hover:bg-secondary" href="#">Get Started</a>
+            <a class="px-6 py-4 bg-primary text-primary-foreground rounded-md shadow-md hover:bg-secondary" href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="flex-row-reverse">
+          <img src="https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4" alt="img" class="rounded-md shadow-md max-w-xs md:max-w-md" />
+        </div>
+      </section>
+      <!--About section-->
+      <section class="flex flex-col md:flex-row items-center p-8 gap-4 bg-muted">
+        <div class="md:mr-56">
+          <img src="https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA" alt="img1" class="rounded-md shadow-md max-w-xs md:max-w-md" />
+        </div>
+        <div class="max-w-lg text-center md:text-left">
+          <h2 class="text-3xl md:text-4xl font-bold">About Me</h2>
+          <p class="text-xl md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          <div class="flex gap-4 justify-center md:justify-start mt-5">
+            <div class="bg-card p-6 rounded shadow-md text-center flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">150+</h3>
+              <p>Projects Completed</p>	
+            </div>
+            <div class="bg-card p-6 rounded shadow-md text-center flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">120</h3>
+              <p>Satisfield Clients</p>
+            </div>
+            <div class="bg-card p-6 rounded shadow-md text-center flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">10</h3>
+              <p>Years of Experience</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Projects Section -->
+      <section class="bg-accent">
+        <h2 class="text-center text-foreground py-6 px-4 text-3xl md:text-4xl font-bold">My Projects</h2>
+          <div class="flex flex-col md:flex-row gap-4 justify-around p-8 text-center">
+            <div class="bg-card p-6 rounded shadow-md flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">Project 1</h3>
+              <p>Project 1 description</p>
+            </div>
+            <div class="bg-card p-6 rounded shadow-md flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">Project 2</h3>
+              <p>Project 2 description</p>
+            </div>
+            <div class="bg-card p-6 rounded shadow-md flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">Project 3</h3>
+              <p>Project 3 description</p>
+            </div>
+          </div>
+      </section>
+      <!-- Projects Section -->
+      <section class="bg-destructive">
+        <h2 class="text-center text-foreground py-6 px-4 text-3xl md:text-4xl font-bold">My Skills</h2>
+          <div class="flex flex-col md:flex-row gap-4 justify-around p-8 text-center">
+            <div class="bg-card p-6 rounded shadow-md flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">Skills 1</h3>
+              <p>Skills 1 description</p>
+            </div>
+            <div class="bg-card p-6 rounded shadow-md flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">Skills 2</h3>
+              <p>Skills 2 description</p>
+            </div>
+            <div class="bg-card p-6 rounded shadow-md flex-1">
+              <h3 class="text-xl md:text-2xl font-bold">Skills 3</h3>
+              <p>Skills 3 description</p>
+            </div>
+          </div>
+      </section>
+      <footer class="bg-gray-100 text-center p-4">
+        <p>&copy; 2025 Portfolio Alberto Contento Guerrero</p>
+      </footer>
+      </footer>
+      
+      <script>
+        const menuBtn = document.querySelector("#mobile-nav-btn");
+        const nav = document.querySelector("#main-nav");
+        menuBtn.addEventListener("click", () => {
+          nav.classList.toggle("hidden");
+        });
+      </script>
+  </body>
+</html>
